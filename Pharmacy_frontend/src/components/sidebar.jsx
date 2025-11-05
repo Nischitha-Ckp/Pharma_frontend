@@ -17,6 +17,8 @@ const Sidebar = () => {
   const menuItems = [
     { path: "/", label: "Dashboard", icon: <LayoutDashboard size={18} /> },
     { path: "/pharmacy", label: "Pharmacy", icon: <ShoppingCart size={18} /> },
+    { path: "/settings", label: "settings", icon: <ShoppingCart size={18} /> },
+    { path: "/retention-policies", label: "retention-policies", icon: <ShoppingCart size={18} /> },
   ];
  
   const masterItems = [

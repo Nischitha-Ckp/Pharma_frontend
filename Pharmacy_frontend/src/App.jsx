@@ -29,24 +29,11 @@ import AddLocation from "./components/Masters/locations/addlocations.jsx";
 import ProductsDashboard from "./components/Masters/products/productsdashboard.jsx";
 import AddProduct from "./components/Masters/products/addproducts.jsx";
 
-import Vendorsdashboard from "./components/masters/vendors/vendorsdashboard.jsx";
-import AddVendors from "./components/masters/vendors/addvendors.jsx";
- //customers imports             
-import AddCustomers from "./components/masters/customers/addcustomers.jsx";        // add new customer form
-import CustomersDashboard from "./components/masters/customers/customersdashboard.jsx"; // dashboard with KPI cards
-//roles imports
-import  RolesDashboard from "./components/masters/roles/rolesdashboard.jsx";
-import AddRole from "./components/masters/roles/addroles.jsx";
+import SettingsDashboard from "./components/settings/settingsdashboard.jsx";
+import AddSetting from "./components/settings/addsettings.jsx";
 
-//locations imports
-import LocationsDashboard from "./components/masters/locations/locationsdashboard.jsx";
-import AddLocation from "./components/masters/locations/addlocations.jsx";
-
-//products imports
-import ProductsDashboard from "./components/masters/products/productsdashboard.jsx";
-import AddProduct from "./components/masters/products/addproducts.jsx";
-
-
+import RetentionDashboard from "./components/retention_policies/retentiondashboard.jsx";
+import AddRetention from "./components/retention_policies/addretention.jsx";
 
 import Dashboard from "./components/dashboard/dashboard.jsx"; 
 import Inventory from "./components/inventory/inventory.jsx";
@@ -85,11 +72,18 @@ const App = () => {
               <Route path="/masters/products" element={<ProductsDashboard />} />
               <Route path="/masters/products/add" element={<AddProduct />} />
 
+              <Route path="/settings" element={<SettingsDashboard />} />
+              <Route path="/settings/add" element={<AddSetting />} />
+
+              <Route path="/retention-policies" element={<RetentionDashboard />} />
+              <Route path="/retention-policies/add" element={<AddRetention />} />
+
+
 
               <Route path="/dashboard" element={<Dashboard />} />
               <Route path="/inventory" element={<Pharmacy />} />
               <Route path="/reports" element={<Home />} />
-              <Route path="/settings" element={<Home />} />
+              
               <Route path="/billing" element={<Billing />} />
             </Routes>
           </main>
